@@ -1,0 +1,69 @@
+body,html{
+    margin:0px;
+    padding: 0px;
+    overflow:hidden;
+}
+
+.repairing{
+    margin:0px;
+    width:99vw;
+    height:99vh;
+}
+
+h1{
+    color: #7E7E82;
+    text-align: center;
+
+}
+.brands{
+    display:flex;
+    flex-wrap: wrap;
+    width:99%;
+    height:203px;
+    overflow-y: auto;
+    transition: height 0.3s ease, overflow 0.3s ease;
+}
+.brands img{
+    margin:10px;
+    margin-right:15px;
+    max-width: 100%;
+}
+
+#myid{
+    border:0px;
+    padding:0px;
+    width:100px;
+    height:50px;
+}
+
+@media (max-width:450px){
+    .brands,#myid{
+        display:none;
+    }
+    .repairing{
+        height:200px;
+        position:relative;
+    }
+    h1{
+        font-size: 1em;
+        text-align: center;
+        margin:20px;
+    }
+    
+    .swiper-slide img {
+       
+        width:90%;
+        
+        background: none;
+    }
+      
+}
+          
+@media (min-width:600px){
+    .swiper-container{
+        display:none;
+    }
+    .swiper-pagination{
+        display: none;  
+    }
+}
